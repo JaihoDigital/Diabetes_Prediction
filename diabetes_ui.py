@@ -1,5 +1,6 @@
 import streamlit as st
 import numpy as np
+import joblib
 
 st.set_page_config(page_title="Diabetes Prediction", layout="wide")
 
@@ -29,7 +30,7 @@ with col7:
 
 arr = np.array([Glucose,BloodPressure, SkinThickness, Insulin, BMi, DiabetesPedigreeFunction, Age])
 
-import joblib
+
 
 predictive_price = joblib.load('diabetes.pkl')
 
